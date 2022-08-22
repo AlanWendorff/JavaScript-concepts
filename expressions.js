@@ -74,3 +74,16 @@ const ARRAY_PROP  = FRUITS[2];         // Here we are using an array prop as exp
 const SUM = function(a, b) {           // This is a "Function expression". This constant stores an expected value returned by an anonymous function.
   return a + b;
 };
+
+const AsyncFunction = async () => {    // This is an "async function expression". 
+ console.log("Fetching API..."); 
+};
+
+await AsyncFunction();                 // This is the "Invocation of an async function".  
+
+function* IDGenerator() {              // This is a "Generator function".         
+  let index = 0;
+  while (index < 3) yield index++;
+}
+
+// All those expressions can produce new values
